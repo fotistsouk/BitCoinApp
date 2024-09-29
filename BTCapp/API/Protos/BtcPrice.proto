@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "BTCapp.API.GRPC";
+
+import "google/protobuf/timestamp.proto";
+
+service BtcPriceService {
+  // RPC method to get the price for a given date and hour
+  rpc GetPrice(GetPriceRequest) returns (GetPriceResponse);
+}
+
+// Request message containing date and hour
+message GetPriceRequest {
+  string date = 1; // Date in YYYY-MM-DD format
+  int32 hour = 2;  // Hour in 24-hour format (0-23)
+}
+
+// Response message containing the price value and datetime
+message GetPriceResponse {
+  float value = 1; // The float value (price)
+  google.protobuf.Timestamp dateTime = 2; // The datetime value (UTC timestamp)
+}

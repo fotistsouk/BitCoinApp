@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    ports:
+        - 3346:3306
+    environment:
+        MYSQL_ROOT_PASSWORD: '1234'
+        MYSQL_DATABASE: btc_db
+        MYSQL_USER: myuser
+        MYSQL_PASSWORD: myapppassword
+    volumes:
+        - ./db:/var/lib/mysql
+        - ./my.cnf:/etc/mysql/my.cnf
+    networks:
+            dev:
+                ipv4_address: "12.57.1.2"
+  btcapp:
+        build:
+            context: ./BTCapp
+            dockerfile: Dockerfile
+        image: btcapp:latest
+        restart: always
+        ports:
+            - 6999:80
+        networks:
+            dev:
+                ipv4_address: "12.57.1.3"
+networks:
+    dev:
+        ipam:
+            driver: default
+            config:
+                - subnet: "12.57.1.0/29"
+
+   
+    

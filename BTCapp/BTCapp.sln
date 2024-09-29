@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BTCapp", "BTCapp.csproj", "{9D7BA041-E5C6-4280-80E7-0ABC556D19E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTC_Tests", "..\BTC_Tests\BTC_Tests.csproj", "{49C96402-7F07-449E-8084-AB25C5C69AE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D7BA041-E5C6-4280-80E7-0ABC556D19E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D7BA041-E5C6-4280-80E7-0ABC556D19E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D7BA041-E5C6-4280-80E7-0ABC556D19E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D7BA041-E5C6-4280-80E7-0ABC556D19E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C96402-7F07-449E-8084-AB25C5C69AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C96402-7F07-449E-8084-AB25C5C69AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C96402-7F07-449E-8084-AB25C5C69AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C96402-7F07-449E-8084-AB25C5C69AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D3E9240-7DFC-47F7-98D2-FE034EC483D8}
+	EndGlobalSection
+EndGlobal
