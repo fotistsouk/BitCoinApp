@@ -8,7 +8,7 @@ in the main folder (the one containing the docker-compose.yaml)
 It will build the BTCapp and then deploy an instance of BTCapp and a MariaDb which is already configured and with the latest migration.
 
 To test functionality you can go at http://localhost:6999/swagger/index.html
-where there is a swagger With 2 controllers
+where there is a swagger With 1 controller ,2 endpoints
 
 First endpoint implements the first spec of the dev task: to fetch an aggregate price at a certain timepoint.
 Second endpoint implements the second spec of the dev task: to fetch various aggregate prices at a range of timepoints.
