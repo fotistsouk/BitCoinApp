@@ -13,7 +13,7 @@ where there is a swagger With 1 controller ,2 endpoints
 First endpoint implements the first spec of the dev task: to fetch an aggregate price at a certain timepoint.
 Second endpoint implements the second spec of the dev task: to fetch various aggregate prices at a range of timepoints.
 
-The implementation is for the API solution , There is also a non tested GRPC implementation.
+The implementation is for the REST API solution , There is also a non tested GRPC implementation.
 
 Some Comments:
 Less effort than planned went to the unit/integration tests.
